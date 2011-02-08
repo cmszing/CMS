@@ -1,0 +1,13 @@
+{% extends "change_form1.html" %}
+
+{% block footer %}
+    {{ block.super }}
+    <script type="text/javascript">
+ (function($){
+	  $(function(){
+            $('inline-panel-selector').click(function() {$(this).toggle(200);});
+        })
+		})(django.jQuery);
+    </script>
+ {% endblock %}
+ 
